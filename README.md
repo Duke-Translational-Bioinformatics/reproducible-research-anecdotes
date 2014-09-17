@@ -4,6 +4,13 @@ reproducible-research-anecdotes
 
 Content for familiarizing trainees with the importance of "reproducible data science". Lecture materials and code snippets for reproducible data science tools.
 
+If you can, please create accounts (if you don't have them already) at
+* github.com
+* figshare.com
+* synapse.org
+
+Also, please download the RStudio Desktop IDE from http://www.rstudio.com/products/rstudio/#Desk
+
 Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
 * Introduction
   *  What is this 'Docker' you speak of?
