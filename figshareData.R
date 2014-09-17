@@ -33,9 +33,9 @@ figAuth <- fs_auth()
 ## CREATE A FIGSHARE PROJECT
 myProjectID <- fs_create(title = 'My Test Figshare Project', 
                          description = 'A test project for learning about Figshare', 
-                         type = 'fileset')
+                         type = 'dataset')
 
-# if you're properly authenticated, you'll get a retrun that states
+# if you're properly authenticated, you'll get a return that states
 # that your 'article' has been created and it's ID number.
 
 ## UPLOAD DATA TO FIGSHARE USING ITS API
@@ -47,7 +47,51 @@ data(iris)
 write.csv(iris, 'iris.csv')
 
 # send up to Figshare cloud
-uploadReturn <- fs_update(myProjectID, 'iris.csv')
+uploadReturn <- fs_upload(myProjectID, 'iris.csv')
+
+## INSPECT METADATA ABOUT THE ARTICLE
+articleDetail <- fs_details(myProjectID)
+
+# output should look something like the below:
+show(articleDetail)
+# article_id: 1172279.0
+# title: iris.csv
+# master_publisher_id: 0.0e+00
+# defined_type: fileset
+# status: Drafts
+# version: 1.0
+# published_date: 11:57, Sep 16, 2014
+# description: A test project for learning about Figshare
+# description_nohtml: A test project for learning about Figshare
+# total_size: 4.60 KB
+# authors:
+#   - first_name: Erich
+# last_name: Huang
+# id: 629551.0
+# full_name: Erich Huang
+# tags:
+#   - id: 195392.0
+# name: Published using rfigshare
+# categories: []
+# files:
+#   - size: 5 KB
+# thumb: ~
+#   id: 1679019.0
+# mime_type: text/plain
+# name: iris.csv
+# links: []
+
+## DEAL WITH IDIOSYNCRACY
+# when you upload a file to a Figshare article, the filename replaces the title
+updateReturn <- fs_update(myProjectID, title = 'New Title')
+
+# if you want to publish a Figshare article, all metadata fields have to be populated
+categoryReturn <- fs_add_categories(myProjectID, c('Botany', 'Information Systems'))
+
+## MAKE THE DATASET PUBLIC
+statusReturn <- fs_make_public(articleDetail$article_id)
 
 ## PULL DOWN THE SAME ARTICLE
-myArticle <- fs_download(myProjectID)
+# note: arguable whether this is a feature or a bug, that a dataset must be public in
+# order for it to be downloadable.
+fs_download(articleDetail$article_id, urls_only = FALSE)
