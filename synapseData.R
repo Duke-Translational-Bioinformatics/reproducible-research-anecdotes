@@ -97,6 +97,79 @@ onWeb(myFolder)
 # this will open your web browser (assuming you're authenticated) to
 # the Entity in question.
 
+## PUT DATA IN OUR FOLDER
+# let's pull up the Fisher Iris dataset again
+data(iris)
+
+# write it to our filesystem as CSV, and as an R object
+write.csv(iris, 'iris.csv')
+saveRDS(iris, 'iris.rds')
+
+# now use the 'File' constructors for both of these Files
+csvFile <- File(path = 'iris.csv', parentId = myFolder$properties$id)
+rdsFile <- File(path = 'iris.rds', parentId = myFolder$properties$id)
+
+fileList <- list(csvFile, rdsFile)
+
+fileReturn <- lapply(fileList, synStore)
+
+# I got fancy above, I created an R list with each File object 
+# and used the 'lapply' vector operation to send the Files up to Synapse
+# in bulk
+
+# alternatively, we could have done:
+# csvFile <- synStore(csvFile) ; rdsFile <- synStore(rdsFile)
+
+show(fileReturn)
+# will yield something like this:
+# [[1]]
+# An object of class "File"
+# Synapse Entity Name : iris.csv
+# Synapse Entity Id   : syn2701196
+# Parent Id     : syn2701195
+# Version Number  : 1
+# Version ID   : 
+#   
+#   For complete list of annotations, please use the annotations() function.
+# 
+# [[2]]
+# An object of class "File"
+# Synapse Entity Name : iris.rds
+# Synapse Entity Id   : syn2701197
+# Parent Id     : syn2701195
+# Version Number  : 1
+# Version ID   : 
+#   
+#   For complete list of annotations, please use the annotations() function.
+
+# let's use the onWeb() function to show a file in the browser, accessing
+# the list object
+lapply(fileReturn, onWeb)
+
+# this should open two tabs in the browser
+
+## CREATING PROVENANCE
+# instantiate an 'Activity'
+generatedData <- Activity(name = 'Iris data collection',
+                          description = 'An Iris data robot measured values')
+
+# send the Activity up to Synapse
+generatedData <- storeEntity(generatedData) 
+
+# associate the Activity with Data to create Provenance
+generatedBy(fileReturn[[1]]) <- generatedData
+generatedBy(fileReturn[[2]]) <- generatedData
+
+# use synStore again to declare the relationship in Synapse
+fileReturn <- lapply(fileReturn, synStore)
+
+
+
+
+
+
+
+
 ## ANNOTATE A PROJECT
 # you can access the annotations of a Project object either using the
 # 'annotations()' method, or the '$' accessor.
