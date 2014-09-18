@@ -18,15 +18,15 @@ The architecture of a git repository can be conceptualized in 3 layers:
 
 ####Git Workflow
 When you work with a git repository, you will do one or more of the following:
-  + create a git repository
+  + create a git repository (git init)
   + do things to change the files in the repository
-  + stage changes to the repository
-  + restore unstaged changed files to their last committed state
-  + find the difference between changed files and their committed versions
-  + unstage changes before they are committed
-  + commit changes to the repository
-  + view the commit history for the repository, or a file within the repository
-  + replace a file with a version of the file committed previously
+  + stage changes to the repository (git add, git rm, git mv)
+  + restore unstaged changed files to their last committed state (git checkout -- file)
+  + find the difference between changed files and their committed versions (git diff, git diff --staged)
+  + unstage changes before they are committed (git reset HEAD file)
+  + commit changes to the repository (git commit)
+  + view the commit history for the repository, or a file within the repository (git log)
+  + replace a file with a version of the file committed previously (git checkout $LONGCHECKSUM file; git add file; git commit file)
 
 Once a changed file is staged, it can be:
 
@@ -41,11 +41,6 @@ place a .keep file in them.
 ####Git Graphical Interfaces
 There are many Graphical Interfaces to Git.  The "Pro Git" book has a good (list)[http://git-scm.com/download/gui/linux)
 Also, many Integrated Development Environments and editors (eclipse, vim , emacs) have hooks directly to git.
-
-####Integrating Git into your analyses
-Since the git client is itself a commandline tool capable of taking arguments to perform all of its activities, it is possible to integrate the git workflow
-into your analysis software applications using system, backtick, or pipes.  Used properly, this can be a powerful way of producing data with provenance
-to support its integrity.
 
 ####Exercises
 Work through the exercises to become more fluent in the use of the git commandline

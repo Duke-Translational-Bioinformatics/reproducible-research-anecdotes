@@ -13,14 +13,16 @@ into their own repository
 
 All of these patterns are based on different ways of utilizing the following git client interactions:
 
-+ Configuring one of your local git repositories to know about one or more 'remote' git repositories.
++ Configuring one of your local git repositories to know about one or more 'remote' git repositories (git remote add)
 These remote repositories can be on the same filesystem, or accessible over the network using ssh or http(s)
-+ cloning/forking a remote repository to a repository that you own and control
-+ pulling committed changesets from a remote repository into your repository
-+ merging pulled changesets into your repository, with the possibility of committing them, or restoring to your version
-+ fixing conflicts between your code and merged changesets in various ways
-+ pushing your committed changesets to a remote repository
++ cloning/forking a remote repository to a repository that you own and control (git clone).  Note, for network accessible
+remote repositories, git automatically sets up the git remotes in the cloned repository)
++ pulling committed changesets from a remote repository into your repository (git pull)
++ merging pulled changesets into your repository, with the possibility of committing them, or restoring to your version (git commit)
++ fixing conflicts between your code and merged changesets in various ways (git mergetool, git checkout --mine file or git checkout --theirs file)
++ pushing your committed changesets to a remote repository (git push)
 + submitting a patch or pull request to a remote repository owner to allow them to review and apply your changes at their discretion
++ finding out how your local code differs from the remote (git fetch $remotename; git diff master $remotename/master)
 
 ####Remote Git Repository Hosting Services
 There are several prominent git repository hosting services available to users.  Most of them allow users to host and share repositories
@@ -40,11 +42,13 @@ for free without limits.  Here is a list with some notes about them:
 ####Generating SSH Keys
 Here is a [useful link](https://help.github.com/articles/generating-ssh-keys) explaining how to generate an SSH key that you can use to identify yourself when pushing or pulling changes from a remote repository. While it is github centric, the resulting key can just as easily be added to your duke gitorious account.  This also assumes that you have not already generated a key.  If you have already generated a key for other uses, and you need a separate key just for github or gitorious (or both), you can follow these instructions, but instruct the ssh-keygen command to save the keypair to a different name than the default.  You can then add the following to your ~/.ssh/config (create this file with this content if it does not already exist):
 
+```
 Host gitorious.oit.duke.edu
 HostName gitorious.oit.duke.edu
 IdentityFile ~/.ssh/my_gitorious_rsa
+```
 
-This will instruct any ssh access (including git access to remotes via ssh) to use the configured IdentityFile instead of your default.
+This will configure calls to ssh (including git access to remotes via ssh under the hood) to use the configured IdentityFile instead of your default.
 
 ####Exercises
-Work through the [exercises](/version_control/collaboration/exercises/) to become more fluent in the use of the git commandline
+Work through the exercises to become more fluent in the use of the git commandline for collaboration.
