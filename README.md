@@ -5,7 +5,7 @@ reproducible-research-anecdotes
 Content for familiarizing trainees with the importance of "reproducible data science". Lecture materials and code snippets for reproducible data science tools. Please bring your laptop or share with someone this Saturday.
 
 If you can, please create accounts (if you don't have them already) at
-* github.com
+* [github.com](https://github.com)
 * [figshare.com](http://figshare.com)
 * [synapse.org](https://www.synapse.org/#!RegisterAccount:0)
 
