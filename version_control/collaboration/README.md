@@ -35,4 +35,4 @@ for free without limits.  Here is a list with some notes about them:
 | [Duke Gitorious](https://gitorious.oit.duke.edu) |  <ul><li>Accounts only available to Duke Faculty, Staff, and Students</li><li>Public repositories are available (cloning/pulling/browsing) to any user on the internet</li><li>Account required to host repositories and projects, and collaborate (push) within repositories</li><li>Not used within the research reproducibility community</li></ul> |
 
 (1) [Amanda Mascarelli, Nature 507,523-525 (2014)](http://www.nature.com/naturejobs/science/articles/10.1038/nj7493-523a)
-(2) Christopher Gandrud, 'Reproducible Research with R and RStudio' Chapman and Hall/CRC (July 15, 2013) (amazon)[http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?s=books&ie=UTF8&qid=1411050704&sr=1-1&keywords=9781466572843]
+(2) Christopher Gandrud, 'Reproducible Research with R and RStudio' Chapman and Hall/CRC (July 15, 2013) [amazon](http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?s=books&ie=UTF8&qid=1411050704&sr=1-1&keywords=9781466572843)
