@@ -48,4 +48,4 @@ into your analysis software applications using system, backtick, or pipes.  Used
 to support its integrity.
 
 ####Exercises
-Work through the exercises to become more fluent in the use of the git commandline
+Work through the (exercises)[exercises.txt) to become more fluent in the use of the git commandline
