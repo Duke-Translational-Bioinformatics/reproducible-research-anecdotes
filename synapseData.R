@@ -171,22 +171,25 @@ fileReturn <- lapply(fileReturn, synStore)
 # first, clear the workspace
 rm(list = ls())
 
-# install and source 'ggplot2'
-install.packages('ggplot2')
-require(ggplot2)
-
+## pull the iris data down from Synapse
 irisDataEntity <- synGet('syn2701266')
 irisData <- readRDS(irisDataEntity@filePath)
 
-irisPlot <- ggplot(irisData, aes(factor(Species), Petal.Width)) +
-  geom_boxplot(aes(fill = factor(Species)), alpha = 0.3) +
-  geom_jitter(aes(colour = factor(Species)), size = 3) +
-  ggtitle('Boxplot of Iris Petal Width by Species\n')
-
+# install and source a simple function for plotting the iris data
+source('irisPlotFunction.R')
+irisPlot <- irisPlotFunction(irisData)
 show(irisPlot)
 
-# Put this plot binary in Synapse
+# put this plot binary in Synapse
 saveRDS(irisPlot, 'irisPlot.rds')
 
-irisPlotFile <- File(path = 'irisPlot.rds', parentId = irisDataEntity$properties$parentId)
+# instantiate the entity and create provenance
+# to make things clearer, the Github URL for the version-controlled function is
+codeURL <- 'https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/blob/63ede1fa5ba3014f69dad009fda8dcb715145075/irisPlotFunction.R'
 
+irisPlotFile <- File(path = 'irisPlot.rds', parentId = irisDataEntity$properties$parentId)
+irisPlotFile <- synStore(irisPlotFile,
+                         activityName = 'Generated Boxplot',
+                         used = list(
+                           list(url = codeURL, name = 'irisPlotFunction.R', wasExecuted = TRUE),
+                           list(entity = irisDataEntity, wasExecuted = FALSE)))
