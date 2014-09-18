@@ -16,7 +16,7 @@ All of these patterns are based on different ways of utilizing the following git
 + Configuring one of your local git repositories to know about one or more 'remote' git repositories (git remote add)
 These remote repositories can be on the same filesystem, or accessible over the network using ssh or http(s)
 + cloning/forking a remote repository to a repository that you own and control (git clone).  Note, for network accessible
-remote repositories, git automatically sets up the git remotes in the cloned repository)
+remote repositories, git automatically sets up the git remotes in the cloned repository
 + pulling committed changesets from a remote repository into your repository (git pull)
 + merging pulled changesets into your repository, with the possibility of committing them, or restoring to your version (git commit)
 + fixing conflicts between your code and merged changesets in various ways (git mergetool, git checkout --mine file or git checkout --theirs file)
