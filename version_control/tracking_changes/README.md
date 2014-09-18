@@ -1,6 +1,8 @@
 Tracking changes to code or data
--
+=
 
+Introduction
+-
 Git is useful for creating a 'time-machine' like environment to track changes in files (text files
 are handled better than binary files) over time.
 
@@ -27,9 +29,11 @@ The basic workflow involves:
 Once a changed file is staged, it can be:
 
   + changed again before it is comitted. This results in the file being staged in the form it was originally staged at, and unstaged in its current form
+  (watch out!.  If you commit the file when it is in both an earlier staged form, and an unstaged new form, ALL CHANGES ARE COMMITTED!)
   + removed from staging
 
 'Changes' to files can include addition, modification, and deletion.
-Directories are NOT actually tracked in a git repository unless there is a file within the directory to track. If you want to store empty directories
+Directories are NOT actually tracked in a git repository unless there is a file/directory within the directory to track. If you want to store empty directories
 place a .keep file in them.
+
 
