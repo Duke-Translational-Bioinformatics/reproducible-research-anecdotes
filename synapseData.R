@@ -57,7 +57,8 @@ require(synapseClient)
 
 ## CREATE A PROJECT
 # let's use the API to create a Project
-myProject <- synStore(Project(name = 'My Iris Test Project'))
+# note that Project names must be unique
+myProject <- synStore(Project(name = 'My Iris Test Project 2'))
 show(myProject)
 
 # you'll see something like this:
@@ -163,11 +164,24 @@ generatedBy(fileReturn[[2]]) <- generatedData
 # use synStore again to declare the relationship in Synapse
 fileReturn <- lapply(fileReturn, synStore)
 
+## MORE COMPLEX PROVENANCE
+# let's create a figure from these data
+# install the fantastic 'ggplot2' package
 
+# first, clear the workspace
+rm(list = ls())
 
+# install and source 'ggplot2'
+install.packages('ggplot2')
+require(ggplot2)
 
+irisDataEntity <- synGet('syn2701266')
+irisData <- readRDS(irisDataEntity@filePath)
 
-
+irisPlot <- ggplot(irisData, aes(factor(Species), Petal.Width)) +
+  geom_boxplot(aes(fill = factor(Species)), alpha = 0.3) +
+  geom_jitter(aes(colour = factor(Species)), size = 3) +
+  ggtitle('Boxplot of Iris Petal Width by Species\n')
 
 
 ## ANNOTATE A PROJECT
