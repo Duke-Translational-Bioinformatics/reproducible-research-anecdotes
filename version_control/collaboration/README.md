@@ -30,7 +30,7 @@ for free without limits.  Here is a list with some notes about them:
 
 | Hosting Service        | Notes           |
 | ------------- |:-------------:|
-| [Github](http://github.com) |  +Largest worldwide network of git repositories. +Free accounts.  Users can create an unlimited number of free publicly accessible repositories. +Subscription required to host private repositories. +Public repositories can still control which users can modify content in the repository. +All repositories can have an unlimited number of collaborators for free. +Has been adopted by many systems being designed to facilitate reproducible research +Has many 'social' features that can be used to enhance your online web presence. +Has a fantastic online user interface. |
+| [Github](http://github.com) |  <ul><li>Largest worldwide network of git repositories.</li><li>Free accounts.</li><li>Account holders can create an unlimited number of free publicly accessible repositories.</li><li>Subscription required to host private repositories.</li><li>Public repositories can still control which users can modify content in the repository.</li><li>All repositories can have an unlimited number of collaborators for free.</li><li>Has been adopted by many systems being designed to facilitate reproducible research</li><li>Has many 'social' features that can be used to enhance your online web presence.</li><li>Has a fantastic online user interface.</li></ul> |
 | [Bitbucket](https://bitbucket.org) | Supports both git and mercurial repositories. |
 |   | Free accounts. Users can host an unlimited number of public or private repositories. |
 |   | Up to 5 collaborators can collaborate within a repository for free, subscription required for more collaborators |
