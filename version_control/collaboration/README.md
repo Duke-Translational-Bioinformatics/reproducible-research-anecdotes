@@ -36,3 +36,15 @@ for free without limits.  Here is a list with some notes about them:
 
 (1) [Amanda Mascarelli, Nature 507,523-525 (2014)](http://www.nature.com/naturejobs/science/articles/10.1038/nj7493-523a)
 (2) Christopher Gandrud, 'Reproducible Research with R and RStudio' Chapman and Hall/CRC (July 15, 2013) [amazon](http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?s=books&ie=UTF8&qid=1411050704&sr=1-1&keywords=9781466572843)
+
+####Generating SSH Keys
+Here is a [useful link](https://help.github.com/articles/generating-ssh-keys) explaining how to generate an SSH key that you can use to identify yourself when pushing or pulling changes from a remote repository. While it is github centric, the resulting key can just as easily be added to your duke gitorious account.  This also assumes that you have not already generated a key.  If you have already generated a key for other uses, and you need a separate key just for github or gitorious (or both), you can follow these instructions, but instruct the ssh-keygen command to save the keypair to a different name than the default.  You can then add the following to your ~/.ssh/config (create this file with this content if it does not already exist):
+
+Host gitorious.oit.duke.edu
+HostName gitorious.oit.duke.edu
+IdentityFile ~/.ssh/my_gitorious_rsa
+
+This will instruct any ssh access (including git access to remotes via ssh) to use the configured IdentityFile instead of your default.
+
+####Exercises
+Work through the [exercises](/version_control/collaboration/exercises/) to become more fluent in the use of the git commandline
