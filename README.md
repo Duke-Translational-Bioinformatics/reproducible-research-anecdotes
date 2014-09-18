@@ -6,7 +6,7 @@ Content for familiarizing trainees with the importance of "reproducible data sci
 
 If you can, please create accounts (if you don't have them already) at
 * github.com
-* figshare.com
+* [figshare.com](http://figshare.com)
 * [synapse.org](https://www.synapse.org/#!RegisterAccount:0)
 
 Also, if you don't already use it, please [download the RStudio Desktop IDE](http://www.rstudio.com/products/rstudio/#Desk) and install it on your machine to follow along with vignettes.
