@@ -1,7 +1,7 @@
 Tracking changes to code or data
-=
+-
 
-Introduction
+###Introduction
 -
 Git is useful for creating a 'time-machine' like environment to track changes in files (text files
 are handled better than binary files) over time.
