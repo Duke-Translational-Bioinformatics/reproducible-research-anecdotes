@@ -183,11 +183,10 @@ irisPlot <- ggplot(irisData, aes(factor(Species), Petal.Width)) +
   geom_jitter(aes(colour = factor(Species)), size = 3) +
   ggtitle('Boxplot of Iris Petal Width by Species\n')
 
+show(irisPlot)
 
-## ANNOTATE A PROJECT
-# you can access the annotations of a Project object either using the
-# 'annotations()' method, or the '$' accessor.
+# Put this plot binary in Synapse
+saveRDS(irisPlot, 'irisPlot.rds')
 
-# if you enter
-annotations(myProject)
+irisPlotFile <- File(path = 'irisPlot.rds', parentId = irisDataEntity$properties$parentId)
 
