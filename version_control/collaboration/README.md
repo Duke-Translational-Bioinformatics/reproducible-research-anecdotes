@@ -30,12 +30,6 @@ for free without limits.  Here is a list with some notes about them:
 
 | Hosting Service        | Notes           |
 | ------------- |:-------------|
-| [Github](http://github.com) |  <ul><li>Largest worldwide network of git repositories.</li><li>Free accounts.</li><li>Account holders can create an unlimited number of free publicly accessible repositories.</li><li>Subscription required to host private repositories.</li><li>Public repositories can still control which users can modify content in the repository.</li><li>All repositories can have an unlimited number of collaborators for free.</li><li>Has been adopted by many systems being designed to facilitate reproducible research</li><li>Has many 'social' features that can be used to enhance your online web presence.</li><li>Has a fantastic online user interface.</li></ul> |
-| [Bitbucket](https://bitbucket.org) | Supports both git and mercurial repositories. |
-|   | Free accounts. Users can host an unlimited number of public or private repositories. |
-|   | Up to 5 collaborators can collaborate within a repository for free, subscription required for more collaborators |
-|   | Not used within the research reproducibility community |
-| [Duke Gitorious](https://gitorious.oit.duke.edu) |  Accounts only available to Duke Faculty, Staff, and Students. |
-|   | Public repositories are available read-only to any user on the internet. :|
-|   | Account required to collaborate on shared repositories. |
-|   | Not used within the research reproducibility community |
+| [Github](http://github.com) |  <ul><li>Largest worldwide network of git repositories</li><li>Free accounts</li><li>Account holders can create an unlimited number of free publicly accessible repositories</li><li>Subscription required to host private repositories</li><li>Public repositories can still control which users can modify content in the repository</li><li>All repositories can have an unlimited number of collaborators for free</li><li>Has been adopted by many systems being designed to facilitate reproducible research</li><li>Has many 'social' features that can be used to enhance your online web presence</li><li>Has a fantastic online user interface</li></ul> |
+| [Bitbucket](https://bitbucket.org) | <ul><li>Supports both git and mercurial repositories</li><li>Free accounts</li><li>Account holders can host an unlimited number of public or private repositories</li><li>Up to 5 collaborators can collaborate within a repository for free, subscription required for more collaborators</li><li>Not used within the research reproducibility community</li></ul> |
+| [Duke Gitorious](https://gitorious.oit.duke.edu) |  <ul><li>Accounts only available to Duke Faculty, Staff, and Students</li><li>Public repositories are available (cloning/pulling/browsing) to any user on the internet</li><li>Account required to collaborate (push) within shared repositories</li><li>Not used within the research reproducibility community</li></ul> |
