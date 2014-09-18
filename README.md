@@ -12,17 +12,4 @@ If you can, please create accounts (if you don't have them already) at
 Also, if you don't already use it, please [download the RStudio Desktop IDE](http://www.rstudio.com/products/rstudio/#Desk) and install it on your machine to follow along with vignettes.
 
 Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
-* Introduction
-  *  What is this 'Docker' you speak of?
-  *  Why is it so popular?
-  *  Getting started
-    * installation
-    * documentation
-    * Hello World
-  * The Docker CLI
-  * Docker Build Contexts and the Dockerfile
-  * Security and other Good Practices
-* Demonstration
-  *  Reproducing an existing analysis using Docker: A Plasmodium Alignment Example
-  *  Reusing and Extending Existing Docker Images
-* Discussion
+
