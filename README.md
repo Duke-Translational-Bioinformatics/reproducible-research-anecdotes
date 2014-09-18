@@ -11,5 +11,7 @@ If you can, please create accounts (if you don't have them already) at
 
 Also, if you don't already use it, please [download the RStudio Desktop IDE](http://www.rstudio.com/products/rstudio/#Desk) and install it on your machine to follow along with vignettes.
 
-Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
+Developing an workshop for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
+
+Please see [the wiki](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/wiki) for organized content.
 
