@@ -30,20 +30,12 @@ for free without limits.  Here is a list with some notes about them:
 
 | Hosting Service        | Notes           |
 | ------------- |:-------------:|
-| (Github)[http://github.com] |  +Largest worldwide network of git repositories.
-+Free accounts.  Users can create an unlimited number of free publicly accessible repositories.
-+Subscription required to host private repositories.
-+Public repositories can still control which users can modify content in the repository.
-+All repositories can have an unlimited number of collaborators for free.
-+Has been adopted by many systems being designed to facilitate reproducible research
-+Has many 'social' features that can be used to enhance your online web presence.
-+Has a fantastic online user interface. |
-| (Bitbucket)[https://bitbucket.org] | Supports both git and mercurial repositories. |
+| [Github](http://github.com) |  +Largest worldwide network of git repositories. +Free accounts.  Users can create an unlimited number of free publicly accessible repositories. +Subscription required to host private repositories. +Public repositories can still control which users can modify content in the repository. +All repositories can have an unlimited number of collaborators for free. +Has been adopted by many systems being designed to facilitate reproducible research +Has many 'social' features that can be used to enhance your online web presence. +Has a fantastic online user interface. |
+| [Bitbucket](https://bitbucket.org) | Supports both git and mercurial repositories. |
 |   | Free accounts. Users can host an unlimited number of public or private repositories. |
-|   | Up to 5 collaborators can work with a repository for free, subscription required for more collaborators |
+|   | Up to 5 collaborators can collaborate within a repository for free, subscription required for more collaborators |
 |   | Not used within the research reproducibility community |
-| (Duke Gitorious)[https://gitorious.oit.duke.edu] |  Accounts only available to Duke Faculty, Staff, and Students. |
+| [Duke Gitorious](https://gitorious.oit.duke.edu) |  Accounts only available to Duke Faculty, Staff, and Students. |
 |   | Public repositories are available read-only to any user on the internet. :|
 |   | Account required to collaborate on shared repositories. |
 |   | Not used within the research reproducibility community |
-
