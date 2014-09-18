@@ -11,14 +11,11 @@ to store the full state, with each changeset, over the entire history of the rep
 it is no longer a git repository, and all history is lost (this can be useful when you want to start a repository over again).
 The architecture of a git repository can be conceptualized in 3 layers:
 
-| ------------ :|
-| untracked working area :|
-| ------------:|
-| staging area to be committed :|
-| :|
-| ------------:|
-| committed changes :|
-| ------------:|
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 The basic workflow involves:
