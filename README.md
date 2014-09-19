@@ -13,7 +13,7 @@ Also, if you don't already use it, please [download the RStudio Desktop IDE](htt
 
 Developing an workshop for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
 
-Please see [the wiki](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/wiki) for organized content.
+Please see each subdirectory's README for organized content.
 
 =======
 Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
