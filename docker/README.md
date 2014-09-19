@@ -10,8 +10,8 @@ runtime that processes their specific data to produce their specific results and
 The Docker website has [excellent references](https://docs.docker.com/reference).
 
 ####Installation
-The [references](https://docs.docker.com/reference/#installation) explain everything
-Mac Users will find [these tips](http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide) extremely helpful.
++ The [references](https://docs.docker.com/reference/#installation) explain everything
++ Mac Users will find [these tips](http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide) extremely helpful.
 
 ####Docker Build Contexts and the Dockerfile
 Explained well in the [references](https://docs.docker.com/reference/builder/).
@@ -33,13 +33,15 @@ installed application
 
 ####Docker Volume Containers
 + Image that exposes a defined set of directories to other containers
-+ Run with a name, will exit, but their directories are cached by the docker host until the container is removed from the host
-+ named volume container is connected to an application container by passing the volume container name to the application container
++ Run with a name to produce a container
++ The container will typically exit immediatly (these do not need to stay running), but the container's directories are cached by the docker host until the container is removed from the host
++ A named volume container is connected to an application container by passing the volume container name to the application container
 when it is run using the --volumes-from docker run flag.  Volume container directories are mounted read-write by default, but this can be
-overridden by appending flags to the --volumes-from name (see [referencres](https://docs.docker.com/reference/run/#volume-shared-filesystems) for details).
-+ application container can read from or write to these directories as needed
-+ data from the volume containers can be extracted either using the [docker cp](https://docs.docker.com/reference/commandline/cli/#cp) command, or running
-another application image (possibly with /bin/bash) with the --volumes-from $name so that the files can be selectively copied and/or processed into the local host path.
+overridden by appending flags to the --volumes-from name:ro (see [references](https://docs.docker.com/reference/run/#volume-shared-filesystems) for details).
++ An application container can read from or write to these directories as needed
++ Files from a volume container can be extracted either using the [docker cp](https://docs.docker.com/reference/commandline/cli/#cp) command on the volume container
+itself, or running another application image (possibly with /bin/bash) with the --volumes-from $name so that the files can be selectively copied and/or processed into the
+local host path.
 
 ####Docker Hubs
 + These are network accessible registries of named Docker images that can be used by any user with access to the hub
