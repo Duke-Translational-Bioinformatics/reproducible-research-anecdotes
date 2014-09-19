@@ -10,7 +10,7 @@ The main point is to develop a common directory structure that is useful across 
 similar projects.  You should also decide whether you want your code to be sharable with
 the data from each individual project, or whether you want your code in a directory structure
 outside of the project directories.  It is possible to use symbolic links, or even git submodules,
-to keep link code from a common source into each project.
+to link code from a common source into each project.
 
 A pipeline that I developed for Greg Crawford and Terry Furey used a directory structure similar to the following:
 
