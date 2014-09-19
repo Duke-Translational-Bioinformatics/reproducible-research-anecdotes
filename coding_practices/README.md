@@ -50,7 +50,7 @@ This provides a number of advantages:
 
 The Crawford pipeline had several modules in the form of individual control scripts:
 
-bwa: expected fastq files to be in in /data/cell_line/protocol/replicate/raw.  Produced bam files produced by aligning raw files to
+bwa: expected fastq files to be in in /data/cell_line/protocol/replicate/raw.  Produced bam files by aligning raw files to
 the sex specific $build genome in /data/cell_line/protocol/replicate/bwa_$build
 
 initial_peaks: expected to find bam files in /data/cell_line/protocol/replicate/bwa_$build, produced output
