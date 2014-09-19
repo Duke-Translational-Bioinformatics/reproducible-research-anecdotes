@@ -64,7 +64,7 @@ final_peaks: expected files in both initial_peaks_$build and parzen_$build, prod
 ####Automation
 Once you have your code modularized, and parameterized, it becomes possible to setup schemes to automate the way they are applied to
 your data when it becomes available.  Wrapper scripts can be coded to read files, databases, or webservices to discover 'jobs' needing to be done,
-e.g. data in projects that made available.  Unix Cron, or other scheduling systems, can be used to have these control scripts regularly run to find new jobs.
+e.g. data in projects that are newly available.  Unix Cron, or other scheduling systems, can be used to have these control scripts regularly run to find new jobs.
 
 (1) [A Quick Guide to Organizing Computational Biology Projects](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000424)
 (2) [A Quick Guide for Developing Effective Bioinformatics Programming Skills](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000589)
