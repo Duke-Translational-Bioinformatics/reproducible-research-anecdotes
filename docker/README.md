@@ -68,7 +68,7 @@ Any image available to you from the docker host or docker hubs configured into y
    + use open([“cmd”,”arg1”,”arg2”]) instead of open(“cmd arg1 arg2”)
    + check for tainted input
    + watch for wildcards in filenames, especially if doing chmod, chown, chgrp, rsync, etc. [see this](http://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt)
-   [More](http://opensource.com/business/14/9/security-for-docker)
+   + [More](http://opensource.com/business/14/9/security-for-docker)
 
 ####Exercises
 Work in groups of 3-4:
