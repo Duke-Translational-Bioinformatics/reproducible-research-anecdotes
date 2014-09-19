@@ -15,3 +15,11 @@ Developing an workshop for Computational Biology & Bioinformatics doctoral stude
 
 Please see [the wiki](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/wiki) for organized content.
 
+=======
+Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
+* Introduction
+* Sharing the data that makes your point
+* Keeping track of changes to data and code with Source Control
+* Collaborating with others with Source Control
+* Coding for reproducibility
+* Sharing, Reusing, and Reproducing the foundational analyses of your research
