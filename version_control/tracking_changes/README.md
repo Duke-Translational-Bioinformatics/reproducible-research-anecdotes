@@ -24,9 +24,9 @@ When you work with a git repository, you will do one or more of the following:
   + restore unstaged changed files to their last committed state (git checkout -- file)
   + find the difference between changed files and their committed versions (git diff, git diff --staged)
   + unstage changes before they are committed (git reset HEAD file)
-  + commit changes to the repository (git commit)
+  + commit changes to the repository. This creates a changeset, with an ID (a SHA hash) in your repository. (git commit)
   + view the commit history for the repository, or a file within the repository (git log)
-  + replace a file with a version of the file committed previously (git checkout $LONGCHECKSUM file; git add file; git commit file)
+  + replace a file with a version of the file committed previously (git checkout $ID file; git add file; git commit file)
 
 Once a changed file is staged, it can be:
 
