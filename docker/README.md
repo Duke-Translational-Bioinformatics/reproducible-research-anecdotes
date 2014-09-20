@@ -75,7 +75,7 @@ Work in groups of 3-4:
 + install Docker on your system
 + run the following (for non mac users, use sudo to run docker):
 ```bash
-$ docker run -ti --rm centos6 echo "HELLO WORLD"
+$ docker run -ti --rm centos:centos6 echo "HELLO WORLD"
 ```
 + Run the Reproducible Plasmodium alignment using instructions on the github repository:
 [Reproducible Docker Analysis Github](https://github.com/dmlond/docker_bwa_aligner)
