@@ -1,6 +1,7 @@
 reproducible-research-anecdotes
 ===============================
-> “Our aim as scientists is objective truth; more truth, more interesting truth, more intelligible truth. We cannot reasonably aim at certainty. Once we realize that human knowledge is fallible, we realize also that we can never be completely certain that we have not made a mistake.” — Karl Popper
+> “Our aim as scientists is objective truth; more truth, more interesting truth, more intelligible truth. We cannot reasonably aim at certainty. Once we realize that human knowledge is fallible, we realize also that we can never be completely certain that we have not made a mistake.” 
+— Karl Popper
 
 Content for familiarizing trainees with the importance of "reproducible data science". Lecture materials and code snippets for reproducible data science tools. Please bring your laptop or share with someone this Saturday.
 
