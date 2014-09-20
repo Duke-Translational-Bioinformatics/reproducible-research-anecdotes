@@ -39,7 +39,7 @@ Directories are NOT tracked in a git repository unless there is a file/directory
 place a .keep file in them.
 
 ####Git Graphical Interfaces
-There are many Graphical Interfaces to Git.  The "Pro Git" book has a good (list)[http://git-scm.com/download/gui/linux)
+There are many Graphical Interfaces to Git.  The "Pro Git" book has a good [list](http://git-scm.com/download/gui/linux)
 Also, many Integrated Development Environments and editors (eclipse, vim , emacs) have hooks directly to git.
 
 ####Exercises
