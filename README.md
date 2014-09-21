@@ -15,6 +15,10 @@ Also, if you don't already use it, please [download the RStudio Desktop IDE](htt
 Developing an workshop for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
 
 Please see each subdirectory's README for organized content.
+* [Managing Data](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/tree/master/managing_data)
+* [Version Control](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/tree/master/version_control)
+* [Coding Practices](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/tree/master/coding_practices)
+* [Compute Environments: Docker](https://github.com/Duke-Translational-Bioinformatics/reproducible-research-anecdotes/tree/master/docker)
 
 =======
 Developing an orientation for Computational Biology & Bioinformatics doctoral students in Reproducible Data Science.
